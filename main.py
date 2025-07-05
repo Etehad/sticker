@@ -41,7 +41,7 @@ async def convert_sticker_to_jpg(request: StickerRequest):
             f.write(jpg_bytes)
         
         # لینک موقت به فایل JPG (برای تولید واقعی، از S3 یا مشابه استفاده کنید)
-        jpg_url = f"https://your-render-service.onrender.com/tmp/{file_id}.jpg"
+        jpg_url = f"https://sticker-74no.onrender.com/tmp/{file_id}.jpg"
         
         return JSONResponse(content={"jpg_url": jpg_url})
     
